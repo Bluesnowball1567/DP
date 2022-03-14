@@ -1,22 +1,19 @@
 <!DOCTYPE HTML>
-<html lang=>
+<html lang=en>
   <head>
     <title>Daily Post Page</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<style>
-	  #about {
-	    display: block;
-	   }
 	  #post {
 		  display: block;
-		  width: 69%;
+		  width: 70.6%;
 	  }
 	  
-	  @media screen and (max-width: 650px) {
-	    #mobile {
-		  display: none;
+	  @media screen and (max-width: 850px) {
+	    #about {
+		  width: 95%;
 		 }
 		#post {
 		  width: 95%;
@@ -34,13 +31,12 @@
     </nav>
 	<div id="post" class="w3-card" style="background-color:white;margin:10px;float:left;">
 	  <div class="w3-container">
-	    <h2>First Blog Post</h2>
+	    <h2 id="pt" onmouseover="mouseOver()" onmouseleave="mouseOut()">First Blog Post</h2>
 		<p>Here's my first post!</p>
 		<p style="float:right;"><small>February, 16 2022 | Wednesday | 1:29AM GMT+8</small></p>
-		<p style="float:right;margin-right:10px;">[Read More]</p>
 	  </div>
 	</div>
-	<div style="color:black;width:28%;margin:10px;float:left;" id="mobile">
+	<div style="color:black;width:28%;float:left;" id="about">
 	  <div class="w3-container w3-card" style="margin:10px;background-color:white">
 	     <h2><ins>Web/Blog Introduction</ins></h2>
 	     <p>Hey there, Welcome to the website! This website will post about the games, such as Minecraft, Roblox, etc. Also, you can join our telegram channel to subcsribe the news!</p>
@@ -54,5 +50,14 @@
 	    <p>Powered by Github</p>
 	  </div>
 	</footer> -->
+	<script>
+		function mouseOver() {
+		  document.getElementById("pt").style.color = "lightblue";
+		}
+		
+		function mouseOut() {
+		  document.getElementById("pt").style.color = "black";
+		}
+		</script>
   </body>
 </html>
