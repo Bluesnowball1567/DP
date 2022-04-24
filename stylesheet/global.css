@@ -25,6 +25,10 @@ p#navbarItem {
   width:auto;
 }
 
+a.navbarTitle {
+  text-decoration:none;
+}
+
 #pageContent {
   width:70%;
   margin:auto;
@@ -38,7 +42,7 @@ p#navbarItem {
 
 #post {
   background-color:white;
-  border-radius: 5px;
+  border-radius:5px;
   margin-bottom:5px;
   width:100%;
   float:left;
@@ -63,6 +67,11 @@ p#navbarItem {
 #postDate {
   float:right;
   font-size:smaller;
+}
+
+.container {
+  background-color:white;
+  border-radius:5px;
 }
   
 #sidebar {
