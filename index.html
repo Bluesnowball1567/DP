@@ -1,63 +1,74 @@
-<!DOCTYPE HTML>
-<html lang=en>
-  <head>
-    <title>Daily Post Page</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<style>
-	  #post {
-		  display: block;
-		  width: 70.6%;
-	  }
-	  
-	  @media screen and (max-width: 850px) {
-	    #about {
-		  width: 95%;
-		 }
-		#post {
-		  width: 95%;
-		}
-	  }
-	</style>
-  </head>
-  <body class="w3-light-grey">
-    <nav class="w3-bar w3-white nav-left w3-card">
-      <p class="w3-bar-item"><b>Daily Post</b></p>
-      <p><a href="#" class="w3-bar-item w3-button">Home</a></p>
-	  <p><a href="#" class="w3-bar-item w3-button">Link</a></p>
-	  <p><a href="#" class="w3-bar-item w3-button">Post Category</a></p>
-	  <p><a href="https://github.com/Bluesnowball1567/DP" class="w3-bar-item w3-button">Github</a></p>
-    </nav>
-	<div id="post" class="w3-card" style="background-color:white;margin:10px;float:left;">
-	  <div class="w3-container">
-	    <h2 id="pt" onmouseover="mouseOver()" onmouseleave="mouseOut()">First Blog Post</h2>
-		<p>Here's my first post!</p>
-		<p style="float:right;"><small>February, 16 2022 | Wednesday | 1:29AM GMT+8</small></p>
-	  </div>
-	</div>
-	<div style="color:black;width:28%;float:left;" id="about">
-	  <div class="w3-container w3-card" style="margin:10px;background-color:white">
-	     <h2><ins>Web/Blog Introduction</ins></h2>
-	     <p>Hey there, Welcome to the website! This website will post about the games, such as Minecraft, Roblox, etc. Also, you can join our telegram channel to subcsribe the news!</p>
-	  </div>
-	  <div class="w3-container w3-card" style="margin:10px;background-color:white">
-	    <h2><ins>My Social Media</ins></h2>
-	   </div>
-	</div>
-	<!-- <footer class="w3-black">
-	  <div class="footer-text">
-	    <p>Powered by Github</p>
-	  </div>
-	</footer> -->
-	<script>
-		function mouseOver() {
-		  document.getElementById("pt").style.color = "lightblue";
-		}
-		
-		function mouseOut() {
-		  document.getElementById("pt").style.color = "black";
-		}
-		</script>
-  </body>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dailt Post - Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="index - Copy2.css">
+    </head>
+    <body class="w3-light-grey">
+        <div>
+            <nav id="navbar" class="w3-bar w3-white">
+                <div id="navbarContent">
+                    <p id="navbarItem" class="w3-bar-item">Daily Post</p>
+                    <a href="https://github.com/Bluesnowball1567/DP" id="navbarItem" class="dpNone w3-button">Github</a>
+                    <a href="#" id="navbarItem" class="dpNone w3-button">Post Category</a>
+                    <a href="#" id="navbarItem" class="dpNone w3-button">Home</a>
+                </div>
+            </nav>
+            <nav id="mobileNavbar" class="w3-bar w3-white">
+                <div id="navbarContent">
+                    <p id="navbarItem" class="w3-bar-item">Daily Post</p>
+                    <div id="mobileNavbarButton">
+                        <a href="#" id="navbarItem" class="w3-button">Home</a>
+                        <a href="#" id="navbarItem" class="w3-button">Post Category</a>
+                        <a href="https://github.com/Bluesnowball1567/DP" id="navbarItem" class="w3-button">Github</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="pageContent">
+            <table id="postTable">
+                <tbody>
+                    <tr>
+                        <td id="abc">&nbsp;</td>
+                        <td style="width:100%;">
+                            <div id="post" class="w3-card">
+                                <div class="w3-container">
+                                    <h1><a href="#" id="postTitle">Second Blog Post</a></h1>
+                                    <p id="postContent">Here's my second post!</p>
+                                    <p id="postDate">March, 28 2022 | Monday | 8:54PM GMT+8</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td id="abc">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td id="abc">&nbsp;</td>
+                        <td>
+                            <div id="post" class="w3-card">
+                                <div class="w3-container">
+                                    <h1><a href="#" id="postTitle">First Blog Post</a></h1>
+                                    <p id="postContent">Here's my first post!</p>
+                                    <p id="postDate">February, 16 2022 | Wednesday | 1:29AM GMT+8</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td id="abc">&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="sidebar">
+                <div id="sidebarContent" class="w3-container w3-card">
+                    <h2 id="sidebarContentTitle">About</h2>
+                    <p>Website Type: Blog<br>Website Owner: (Secret)</p>
+                </div>
+                <div id="sidebarContent" class="w3-container w3-card">
+                    <h2 id="sidebarContentTitle">Post Tags</h2>
+                    <p>None.</p>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
